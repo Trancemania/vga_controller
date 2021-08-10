@@ -1,0 +1,136 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "top")
+(DATE "Sun Aug  8 20:47:56 2021")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Blue_OBUF\[0\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Blue_OBUF\[1\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Blue_OBUF\[2\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Blue_OBUF\[3\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Green_OBUF\[0\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Green_OBUF\[1\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Green_OBUF\[2\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Green_OBUF\[3\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Hsynq_OBUF_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Red_OBUF\[0\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Red_OBUF\[1\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Red_OBUF\[2\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Red_OBUF\[3\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Vsynq_OBUF_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (2512.6:2827.2:2827.2) (2512.6:2827.2:2827.2))
+    )
+  )
+)
+)

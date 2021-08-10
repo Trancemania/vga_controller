@@ -1,0 +1,493 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Mon Aug  9 10:14:32 2021
+# Process ID: 3104
+# Current directory: D:/github/vga_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15928 D:\github\vga_controller\vga_controller.xpr
+# Log file: D:/github/vga_controller/vivado.log
+# Journal file: D:/github/vga_controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github/vga_controller/vga_controller.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Workspace/vivado/vga_controller' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/github/vga_controller/vga_controller.gen/sources_1', nor could it be found using path 'E:/Workspace/vivado/vga_controller/vga_controller.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1079.242 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/github/vga_controller/vga_controller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/github/vga_controller/vga_controller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench2_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/vga_controller/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/vga_controller/horizontal_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module horizontal_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/vga_controller/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/vga_controller/vertical_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vertical_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/vga_controller/vga_controller.srcs/sim_1/new/testbench2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github/vga_controller/vga_controller.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/github/vga_controller/vga_controller.sim/sim_1/behav/xsim'
+"xelab -wto 3a3cfa131fa144269f4d6386b42fa4dd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench2_behav xil_defaultlib.testbench2 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.2.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3a3cfa131fa144269f4d6386b42fa4dd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench2_behav xil_defaultlib.testbench2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.horizontal_counter
+Compiling module xil_defaultlib.vertical_counter
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench2_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1079.242 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/github/vga_controller/vga_controller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench2_behav -key {Behavioral:sim_1:Functional:testbench2} -tclbatch {testbench2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator v2020.2.2
+Time resolution is 1 ps
+source testbench2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1079.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1079.242 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+file mkdir D:/github/vga_controller/vga_controller.srcs/constrs_1
+add_files -fileset constrs_1 -norecurse D:/github/vga_controller/VGA_Test.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Aug  9 11:54:46 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Aug  9 14:50:03 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tlftg256-2L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1330.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1786.875 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1786.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1786.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 1922.422 ; gain = 843.180
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 14:52:46 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 14:59:01 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 14:59:01 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tlftg256-2L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1960.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Finished Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1960.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1960.766 ; gain = 0.000
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\github\vga_controller\top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\github\vga_controller\clock_divider.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+synth_1_copy_1
+set_property part xc7a35tftg256-1 [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 15:21:02 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 15:21:02 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+close_project
+open_project D:/github/vga_controller/vga_controller.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/github/vga_controller/vga_controller.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 15:27:16 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 15:27:16 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 15:36:06 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 15:36:06 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 15:42:35 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 15:42:36 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2.2
+  **** Build date : Feb  9 2021 at 06:30:12
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:04 ; elapsed = 00:00:24 . Memory (MB): peak = 1960.766 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3348.062 ; gain = 1387.297
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+close_hw_manager
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tftg256-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3391.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/github/vga_controller/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/github/vga_controller/clock_divider.v:4]
+	Parameter div_value bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/github/vga_controller/clock_divider.v:4]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/github/vga_controller/horizontal_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/github/vga_controller/horizontal_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/github/vga_controller/vertical_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/github/vga_controller/vertical_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/github/vga_controller/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 3405.176 ; gain = 13.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3423.027 ; gain = 31.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3423.027 ; gain = 31.758
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3423.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'clk}' specified for 'objects'. [D:/github/vga_controller/VGA_Test.xdc:1]
+Finished Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3526.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 3567.188 ; gain = 175.918
+11 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 3567.188 ; gain = 175.918
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Finished Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 3602.840 ; gain = 14.191
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 15:52:40 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 15:52:40 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2.2
+  **** Build date : Feb  9 2021 at 06:30:12
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 3603.559 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3603.559 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Mon Aug  9 16:00:50 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Aug  9 16:03:47 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Mon Aug  9 16:13:09 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3609.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 4227.973 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 4227.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4227.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 4294.676 ; gain = 685.543
+current_design rtl_1
+set_property OFFCHIP_TERM NONE [get_ports [list clk]]
+save_constraints -force
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tftg256-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4382.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Finished Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4424.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 4491.477 ; gain = 123.902
+report_clock_networks -name {network_1}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {8}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files d:/github/vga_controller/vga_controller.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/github/vga_controller/vga_controller.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/github/vga_controller/vga_controller.gen/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files d:/github/vga_controller/vga_controller.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/github/vga_controller/vga_controller.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs ila_0_synth_1 -jobs 4
+[Mon Aug  9 16:38:29 2021] Launched ila_0_synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/github/vga_controller/vga_controller.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/github/vga_controller/vga_controller.ip_user_files/sim_scripts -ip_user_files_dir D:/github/vga_controller/vga_controller.ip_user_files -ipstatic_source_dir D:/github/vga_controller/vga_controller.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/github/vga_controller/vga_controller.cache/compile_simlib/modelsim} {questa=D:/github/vga_controller/vga_controller.cache/compile_simlib/questa} {riviera=D:/github/vga_controller/vga_controller.cache/compile_simlib/riviera} {activehdl=D:/github/vga_controller/vga_controller.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4792.934 ; gain = 76.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/github/vga_controller/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/github/vga_controller/clock_divider.v:4]
+	Parameter div_value bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/github/vga_controller/clock_divider.v:4]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/github/vga_controller/horizontal_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/github/vga_controller/horizontal_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/github/vga_controller/vertical_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/github/vga_controller/vertical_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/github/vga_controller/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 4821.520 ; gain = 104.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 4839.430 ; gain = 122.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 4839.430 ; gain = 122.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4877.922 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Finished Parsing XDC File [D:/github/vga_controller/VGA_Test.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:25 . Memory (MB): peak = 4877.922 ; gain = 161.328
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/github/vga_controller/vga_controller.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Aug  9 16:40:59 2021] Launched synth_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/synth_1/runme.log
+[Mon Aug  9 16:40:59 2021] Launched impl_1...
+Run output will be captured here: D:/github/vga_controller/vga_controller.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/github/vga_controller/vga_controller.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
