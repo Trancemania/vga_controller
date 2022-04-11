@@ -1,0 +1,276 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 17604
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Apr 11 20:50:05 SGT 2022
+Time zone: 	Singapore Standard Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 32
+
+Screen size: 1680x1050
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	D:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Trancemania
+User home directory: C:/Users/Trancemania
+User working directory: E:/Github/vga_controller
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2021.1
+RDI_DATADIR: D:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: D:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/Trancemania/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/Trancemania/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/Trancemania/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	D:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	E:/Github/vga_controller/vivado.log
+Vivado journal file: 	E:/Github/vga_controller/vivado.jou
+Engine tmp dir: 	E:/Github/vga_controller/.Xil/Vivado-17604-DESKTOP-HFMTSVB
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2021.1
+XILINX_SDK: D:/Xilinx/Vitis/2021.1
+XILINX_VITIS: D:/Xilinx/Vitis/2021.1
+XILINX_VIVADO: D:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,291 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 70 MB (+70975kb) [00:00:03]
+// [Engine Memory]: 1,291 MB (+1202088kb) [00:00:03]
+// aK (cs): Older Project Version: addNotify
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,291 MB. GUI used memory: 71 MB. Current time: 4/11/22, 8:50:06 PM SGT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Opening Vivado Project: E:\Github\vga_controller\vga_controller.xpr. Version: Vivado v2020.2.2 
+// bz (cs):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aK
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project E:/Github/vga_controller/vga_controller.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 81 MB (+7656kb) [00:00:11]
+// [GUI Memory]: 86 MB (+1498kb) [00:00:11]
+// [GUI Memory]: 124 MB (+34818kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  1668 ms.
+// Tcl Message: open_project E:/Github/vga_controller/vga_controller.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/github/vga_controller' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'. 
+// Tcl Message: INFO: [Project 1-230] Project 'vga_controller.xpr' upgraded for this version of Vivado. 
+// Project name: vga_controller; location: E:/Github/vga_controller; part: xc7a35tftg256-1
+dismissDialog("Open Project"); // bz
+// ak (cs): Project Upgraded: addNotify
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_REPORT_IP_STATUS, "Report IP Status"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+dismissDialog("Project Upgraded"); // ak
+// [GUI Memory]: 143 MB (+13212kb) [00:00:19]
+// Tcl Message: report_ip_status -name ip_status  
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // D
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "xc7a35tftg256-1"); // h
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // t
+// c (d): Select Device: addNotify
+// Elapsed time: 59 seconds
+dismissDialog("Select Device"); // c
+// [GUI Memory]: 152 MB (+2011kb) [00:01:35]
+dismissDialog("Settings"); // d
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+// A (cs): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // an
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // o
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bz (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bz
+// [GUI Memory]: 169 MB (+9812kb) [00:02:38]
+// Elapsed time: 19 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clk"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "Clocking Wizard", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "Clocking Wizard", 0, false, false, false, false, false, true); // L - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// k (cs):  Customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cs): Customize IP: addNotify
+dismissDialog("Customize IP"); // k
+// Elapsed time: 20 seconds
+dismissDialog("Customize IP"); // r
+// Elapsed time: 83 seconds
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "6.0 (Rev. 8)", 7, false); // X
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // aj
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "clk_wiz_0 [Clocking Wizard] (IP revision change)", 3, false); // X
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change"); // aj
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "clk_wiz_0 [Clocking Wizard] (IP revision change)", 2, false); // X
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP revision change"); // aj
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "clk_wiz_0 [Clocking Wizard] (IP revision change)", 2, false); // X
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "More info"); // aj
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "clk_wiz_0 [Clocking Wizard] (IP revision change)", 4, false); // X
+// Elapsed time: 130 seconds
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "More info"); // aj
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "clk_wiz_0 [Clocking Wizard] (IP revision change)", 4, false); // X
+selectButton(PAResourceItoN.IPStatusTablePanel_VIEW_FULL_LOG, "view full log"); // h
+// Q (cs): Change Log for Clocking Wizard: addNotify
+// Elapsed time: 19 seconds
+dismissDialog("Change Log for Clocking Wizard"); // Q
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ak
+// Elapsed time: 19 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "Clocking Wizard", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard ; AXI4 ; Production ; Included ; xilinx.com:ip:clk_wiz:6.0", 6, "Clocking Wizard", 0, false, false, false, false, false, true); // L - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cs): Customize IP: addNotify
+// Elapsed time: 22 seconds
+dismissDialog("Customize IP"); // r
+// [GUI Memory]: 177 MB (+147kb) [00:18:13]
+// Elapsed time: 701 seconds
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_INTERFACES, "Interfaces", 1); // i
+selectTab(PAResourceItoN.IPCoreView_TABBED_PANE, PAResourceItoN.IPCoreView_CORES, "Cores", 0); // i
+selectButton((HResource) null, "IP Catalog_settings"); // x: TRUE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 1); // m
+// Elapsed time: 55 seconds
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ad (cs): Enable Core Container: addNotify
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'aa' command handler elapsed time: 26 seconds
+dismissDialog("Enable Core Container"); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bz (cs):  Upgrade IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_wiz_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'clk_wiz_0' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 6.0) from revision 6 to revision 8 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Github/vga_controller/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet 
+// aI (cs): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cs):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  E:/Github/vga_controller/vga_controller.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files E:/Github/vga_controller/vga_controller.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files E:/Github/vga_controller/vga_controller.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory E:/Github/vga_controller/vga_controller.ip_user_files/sim_scripts -ip_user_files_dir E:/Github/vga_controller/vga_controller.ip_user_files -ipstatic_source_dir E:/Github/vga_controller/vga_controller.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Github/vga_controller/vga_controller.cache/compile_simlib/modelsim} {questa=E:/Github/vga_controller/vga_controller.cache/compile_simlib/questa} {riviera=E:/Github/vga_controller/vga_controller.cache/compile_simlib/riviera} {activehdl=E:/Github/vga_controller/vga_controller.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton("OptionPane.button", "OK"); // JButton
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "clk_wiz_0", 0, false); // X
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "true", 1, false); // X
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+// Elapsed time: 295 seconds
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+selectButton("OptionPane.button", "OK"); // JButton
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "clk_wiz_0 ; true ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; Clocking Wizard ; 6.0 (Rev. 6) ; 6.0 (Rev. 8) ; clk_wiz_0 [Clocking Wizard] (IP revision change) ; xc7a35tftg256-1", 0, "6.0 (Rev. 8)", 7, false); // X
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cs):  Re-customize IP : addNotify
+// r (cs): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N
+dismissDialog("Re-customize IP"); // r
+// HMemoryUtils.trashcanNow. Engine heap size: 1,291 MB. GUI used memory: 127 MB. Current time: 4/11/22, 9:20:07 PM SGT
+// [GUI Memory]: 187 MB (+870kb) [00:32:56]
+// Elapsed time: 590 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pll_inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+// Elapsed time: 13 seconds
+closeMainWindow("vga_controller - [E:/Github/vga_controller/vga_controller.xpr] - Vivado 2021.1"); // cs
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// A (cs): Exit Vivado: addNotify

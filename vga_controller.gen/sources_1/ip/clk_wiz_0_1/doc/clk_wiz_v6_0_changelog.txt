@@ -1,3 +1,13 @@
+2021.1:
+ * Version 6.0 (Rev. 8)
+ * Bug Fix: Internal GUI fixes
+ * Other: CR Fixes
+
+2020.3:
+ * Version 6.0 (Rev. 7)
+ * Bug Fix: Internal GUI fixes
+ * Other: CR Fixes
+
 2020.2.2:
  * Version 6.0 (Rev. 6)
  * No changes

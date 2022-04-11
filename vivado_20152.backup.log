@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Tue Aug 10 10:30:29 2021
+# Process ID: 20152
+# Current directory: D:/github/vga_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20464 D:\github\vga_controller\vga_controller.xpr
+# Log file: D:/github/vga_controller/vivado.log
+# Journal file: D:/github/vga_controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/github/vga_controller/vga_controller.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 1081.305 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_run impl_1
+reset_run synth_1
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
